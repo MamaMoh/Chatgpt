@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat GPT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #343440;
+    }
+    .button {
+      padding: 8px 20px;
+      background-color: #212023;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      width: 100%;
+      text-align: left;
+    }
+    .button:hover {
+      background-color: #343440;
+      border: 1px solid #fff;
+    }
+    .logo {
+      color: #fff;
+      display: block;
+    }
+    .collapse-button {
+      background-color: #212023;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .collapse-button .bi-caret-up {
+      margin-right: 5px;
+    }
+    .sidebar {
+      background-color: #212023;
+      height: 100%; /* Set the sidebar height to occupy the full viewport height */
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px; /* Add some padding to the sidebar */
+    }
+    /* Additional CSS to align buttons next to each other */
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    /* Additional CSS to style the input field */
+    .main-content {
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 100vh; /* Set the main content to occupy the full viewport height */
+    }
+    .input-group {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the input field horizontally */
+        margin-top: 16px; /* Add some margin from the top */
+        margin-bottom: 10px;
+      }
+      .input-field {
+        flex: 0.5;
+        padding: 8px;
+        border: none;
+        background-color: rgb(65, 65, 78);
+        color: #fff;
+        border-radius: 4px;
+        margin-left: 40px;
+      }
+    .send-button {
+      background-color: #22c27F;
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-left: 5px; /* Add some spacing between the input field and the button */
+    }
+    .send-button:hover {
+      background-color: #1da56B;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row mt-3">
+      <div class="col-md-2">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="button-container">
+            <button class="button mb-2">New Chat</button>
+            <div class="collapse-button mb-2" style="margin-left:10px;" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-expanded="false" aria-controls="sidebarCollapse">
+              <i class="bi bi-caret-up" style="color:#fff"></i>collapse
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Your main content here -->
+            <div class="input-group">
+                <input type="text" class="input-field" placeholder="Type your message...">
+                <button class="send-button">Send</button>
+              </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
